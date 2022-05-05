@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08A4CB8E282430F200D01546 /* librealsense2.2.50.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5C28242C7C00D9D1B0 /* librealsense2.2.50.0.dylib */; };
+		08A4CB8F282430F200D01546 /* librealsense2.2.50.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5C28242C7C00D9D1B0 /* librealsense2.2.50.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		08A4CB90282430F200D01546 /* librealsense2.2.50.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5B28242C7C00D9D1B0 /* librealsense2.2.50.dylib */; };
+		08A4CB91282430F200D01546 /* librealsense2.2.50.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5B28242C7C00D9D1B0 /* librealsense2.2.50.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		08A4CB92282430F200D01546 /* librealsense2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5A28242C7C00D9D1B0 /* librealsense2.dylib */; };
+		08A4CB93282430F200D01546 /* librealsense2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5A28242C7C00D9D1B0 /* librealsense2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		08A4CB94282430F200D01546 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5D28242C7C00D9D1B0 /* libusb-1.0.0.dylib */; };
+		08A4CB95282430F200D01546 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5D28242C7C00D9D1B0 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		08D95C5828242A9600D9D1B0 /* rs-hello-realsense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08D95C5728242A9600D9D1B0 /* rs-hello-realsense.cpp */; };
-		08D95C5E28242C7C00D9D1B0 /* librealsense2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5A28242C7C00D9D1B0 /* librealsense2.dylib */; };
-		08D95C5F28242C7C00D9D1B0 /* librealsense2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5A28242C7C00D9D1B0 /* librealsense2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		08D95C6028242C7C00D9D1B0 /* librealsense2.2.50.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5B28242C7C00D9D1B0 /* librealsense2.2.50.dylib */; };
-		08D95C6128242C7C00D9D1B0 /* librealsense2.2.50.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5B28242C7C00D9D1B0 /* librealsense2.2.50.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		08D95C6228242C7C00D9D1B0 /* librealsense2.2.50.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5C28242C7C00D9D1B0 /* librealsense2.2.50.0.dylib */; };
-		08D95C6328242C7C00D9D1B0 /* librealsense2.2.50.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5C28242C7C00D9D1B0 /* librealsense2.2.50.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		08D95C6428242C7C00D9D1B0 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5D28242C7C00D9D1B0 /* libusb-1.0.0.dylib */; };
-		08D95C6528242C7C00D9D1B0 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5D28242C7C00D9D1B0 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		08A4CB96282430F200D01546 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08A4CB91282430F200D01546 /* librealsense2.2.50.dylib in Embed Libraries */,
+				08A4CB93282430F200D01546 /* librealsense2.dylib in Embed Libraries */,
+				08A4CB8F282430F200D01546 /* librealsense2.2.50.0.dylib in Embed Libraries */,
+				08A4CB95282430F200D01546 /* libusb-1.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08D95C492824238400D9D1B0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -27,20 +41,6 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-		};
-		08D95C6628242C7C00D9D1B0 /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				08D95C6128242C7C00D9D1B0 /* librealsense2.2.50.dylib in Embed Libraries */,
-				08D95C5F28242C7C00D9D1B0 /* librealsense2.dylib in Embed Libraries */,
-				08D95C6328242C7C00D9D1B0 /* librealsense2.2.50.0.dylib in Embed Libraries */,
-				08D95C6528242C7C00D9D1B0 /* libusb-1.0.0.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -60,10 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08D95C6028242C7C00D9D1B0 /* librealsense2.2.50.dylib in Frameworks */,
-				08D95C5E28242C7C00D9D1B0 /* librealsense2.dylib in Frameworks */,
-				08D95C6228242C7C00D9D1B0 /* librealsense2.2.50.0.dylib in Frameworks */,
-				08D95C6428242C7C00D9D1B0 /* libusb-1.0.0.dylib in Frameworks */,
+				08A4CB90282430F200D01546 /* librealsense2.2.50.dylib in Frameworks */,
+				08A4CB92282430F200D01546 /* librealsense2.dylib in Frameworks */,
+				08A4CB8E282430F200D01546 /* librealsense2.2.50.0.dylib in Frameworks */,
+				08A4CB94282430F200D01546 /* libusb-1.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 				08D95C472824238400D9D1B0 /* Sources */,
 				08D95C482824238400D9D1B0 /* Frameworks */,
 				08D95C492824238400D9D1B0 /* CopyFiles */,
-				08D95C6628242C7C00D9D1B0 /* Embed Libraries */,
+				08A4CB96282430F200D01546 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -289,6 +289,10 @@
 				DEVELOPMENT_TEAM = MA82T7BPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "projet-xcode/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/projet-xcode/libraries",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -301,6 +305,10 @@
 				DEVELOPMENT_TEAM = MA82T7BPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "projet-xcode/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/projet-xcode/libraries",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
