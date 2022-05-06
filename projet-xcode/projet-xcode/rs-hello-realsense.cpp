@@ -3,6 +3,7 @@
 
 #include <librealsense2/rs.hpp> // Include RealSense Cross Platform API
 #include <iostream>             // for cout
+#include <sstream>
 
 // Hello RealSense example demonstrates the basics of connecting to a RealSense device
 // and taking advantage of depth data
@@ -14,23 +15,52 @@ int main(int argc, char * argv[]) try
     // Configure and start the pipeline
     p.start();
 
-    while (true)
+    int i = 0;
+    while (i<1)
     {
         // Block program until frames arrive
         rs2::frameset frames = p.wait_for_frames();
 
         // Try to get a frame of a depth image
-        rs2::depth_frame depth = frames.get_depth_frame();
+       rs2::depth_frame depth = frames.get_depth_frame();
+
+       const float* depthData = (float*) depth.get_data();
+       // depthData est un pseudo-multidimensional array
 
         // Get the depth frame's dimensions
         auto width = depth.get_width();
         auto height = depth.get_height();
 
+//        for (int y = 0; y < height; y+=16)
+//        {
+//            for (int x = 0; x < width; x+=16)
+//            {
+//                std::cout << depthData[width * y + x] * 1 << ", ";
+//            }
+//            std::cout <<"\n";
+//        }
+
+        std::cout <<"\n--------------\n\n";
+
+        for (int y = 0; y < height; y+=16)
+        {
+            for (int x = 0; x < width; x+=16)
+            {
+                //std::cout << depthData[x+y*width]  << ", ";
+                float dist = depth.get_distance(x, y);
+                printf("%0.2f\t", dist);
+                //printf("%f\t", depthData[x+y*width]*depth.get_units());
+            }
+            std::cout <<"\n";
+        }
+
         // Query the distance from the camera to the object in the center of the image
         float dist_to_center = depth.get_distance(width / 2, height / 2);
 
         // Print the distance
+        //printf("%f", dist_to_center);
         std::cout << "The camera is facing an object " << dist_to_center << " meters away \r";
+        i++;
     }
 
     return EXIT_SUCCESS;
