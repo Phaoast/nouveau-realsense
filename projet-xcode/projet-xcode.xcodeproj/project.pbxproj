@@ -15,6 +15,7 @@
 		08A4CB93282430F200D01546 /* librealsense2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5A28242C7C00D9D1B0 /* librealsense2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		08A4CB94282430F200D01546 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D95C5D28242C7C00D9D1B0 /* libusb-1.0.0.dylib */; };
 		08A4CB95282430F200D01546 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 08D95C5D28242C7C00D9D1B0 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		08A4CB9828255B5000D01546 /* rs-capture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08A4CB9728255B5000D01546 /* rs-capture.cpp */; };
 		08D95C5828242A9600D9D1B0 /* rs-hello-realsense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08D95C5728242A9600D9D1B0 /* rs-hello-realsense.cpp */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08A4CB9728255B5000D01546 /* rs-capture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "rs-capture.cpp"; sourceTree = "<group>"; };
 		08D95C4B2824238400D9D1B0 /* projet-xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "projet-xcode"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D95C5528242A8100D9D1B0 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
 		08D95C5628242A8E00D9D1B0 /* libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libraries; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		08D95C4D2824238400D9D1B0 /* projet-xcode */ = {
 			isa = PBXGroup;
 			children = (
+				08A4CB9728255B5000D01546 /* rs-capture.cpp */,
 				08D95C5728242A9600D9D1B0 /* rs-hello-realsense.cpp */,
 				08D95C5628242A8E00D9D1B0 /* libraries */,
 				08D95C5528242A8100D9D1B0 /* include */,
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08D95C5828242A9600D9D1B0 /* rs-hello-realsense.cpp in Sources */,
+				08A4CB9828255B5000D01546 /* rs-capture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
